@@ -1,0 +1,105 @@
+.register-event-details-form {
+    background-color: #f7f7f7;
+    width: 700px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    color: #A86666;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #A86666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #A86666;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #A86666;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.fecha-section,
+.lugar-section {
+    margin-bottom: 20px;
+}
+
+.fecha-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.modalidad-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #A86666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #6a3a3b;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    color: #5D3B3B; 
+    background-color: #fff; 
+    appearance: none; 
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+select:hover {
+    border-color: #D09B9B; 
+}
+
+
+select:focus {
+    outline: none;
+    border-color: #8A6B6B;
+    box-shadow: 0 0 4px rgba(138, 107, 107, 0.4); 
+}
+

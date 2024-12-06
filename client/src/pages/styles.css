@@ -1,0 +1,60 @@
+/* Botones de Zona */
+.button-zone-add {
+    background-color: #F39C12; /* Amarillo cálido */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-zone-add:hover {
+    background-color: #E67E22; /* Naranja más oscuro */
+}
+
+.button-zone-remove {
+    background-color: #E74C3C; /* Rojo brillante */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-zone-remove:hover {
+    background-color: #C0392B; /* Rojo oscuro */
+}
+
+/* Botones de Fila */
+.button-row-add {
+    background-color: #D35400; /* Naranja fuerte */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-row-add:hover {
+    background-color: #E67E22; /* Naranja oscuro */
+}
+
+.button-row-remove {
+    background-color: #E74C3C; /* Rojo brillante */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-row-remove:hover {
+    background-color: #C0392B; /* Rojo oscuro */
+}
+.leaflet-container {
+    z-index: 0;
+}

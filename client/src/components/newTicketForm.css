@@ -1,0 +1,55 @@
+.new-ticket-form {
+    background-color: #f7f7f7;
+    width: 550px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+h2 {
+    color: #A86666;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #A86666;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.tipo-pago, .tipo-cierre {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #A86666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6a3a3b;
+}

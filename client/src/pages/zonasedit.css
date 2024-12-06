@@ -1,0 +1,79 @@
+.zona-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .zona-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .zona-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .zona-container .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .zona-container .form-row > div {
+    flex: 1; /* Los campos ocupan la misma cantidad de espacio */
+  }
+  
+  .zona-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .zona-container input,
+  .zona-container textarea,
+  .zona-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .zona-container textarea {
+    resize: vertical;
+  }
+  
+  .zona-container button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .zona-container button:hover {
+    background-color: #0056b3;
+  }
+  .zona-container button[type="submit"] {
+    background-color: #28a745; /* Verde */
+  }
+  
+  .zona-container .button-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  

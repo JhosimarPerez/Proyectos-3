@@ -1,0 +1,3 @@
+npm install bcrypt
+npm install dotenv
+npm install nodemailer

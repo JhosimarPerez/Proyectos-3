@@ -1,0 +1,249 @@
+/* Contenedor principal */
+.event-details-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden; /* Evita que el contenido sobresalga */
+}
+
+/* Título del evento */
+.event-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+  word-wrap: break-word; /* Ajusta palabras largas */
+}
+
+/* Imagen del evento */
+.event-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Descripción del evento */
+.event-description {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.6; /* Espaciado entre líneas */
+  overflow-wrap: break-word; /* Ajusta palabras largas */
+  white-space: normal; /* Permite múltiples líneas */
+}
+
+/* Detalles del evento */
+.event-detail {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Contenedor de zonas */
+.event-zones {
+  margin-top: 20px;
+}
+
+.zone-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Evita desbordes */
+}
+
+/* Lista de asientos */
+.seat-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espaciado entre asientos */
+  justify-content: center; /* Centra los asientos dentro del contenedor */
+}
+
+/* Botón de asiento */
+.seat-button {
+  width: 50px; /* Ajusta el tamaño del botón */
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Colores según estado del asiento */
+.seat-button.disponible {
+  background-color: green;
+}
+
+.seat-button.reservado {
+  background-color: yellow;
+  color: black;
+}
+
+.seat-button.vendido {
+  background-color: red;
+  cursor: not-allowed;
+}
+
+.seat-button.selected {
+  border: 2px solid blue;
+}
+
+/* Hover y animación */
+.seat-button:hover:not(.vendido) {
+  transform: scale(1.1);
+}
+
+/* Selección de tickets */
+.ticket-selection {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.ticket-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d9534f;
+  margin-top: 10px;
+}
+
+/* Botón de compra */
+.btn-add-to-cart {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #1fb81c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-add-to-cart:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.btn-add-to-cart:hover:not(:disabled) {
+  background-color: #155bb5;
+}
+
+.btn-add-to-cart:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* Botón de iniciar sesión */
+.btn-login {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-login:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Contenedor del historial de compras */
+.purchase-history {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Elementos del historial */
+.purchase-item {
+  margin-bottom: 10px;
+}
+
+.purchase-item p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+  word-wrap: break-word; /* Ajusta palabras largas */
+}
+
+/* Botones adicionales */
+.buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.buttons .btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.buttons .btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.buttons .btn-primary:hover {
+  background-color: #0056b3;
+  
+}
+
+.buttons .btn-danger {
+  background-color: #e53935;
+  color: white;
+  border: none;
+}
+
+.buttons .btn-danger:hover {
+  background-color: #c62828;
+}
+.seat {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.seat.disponible {
+  background-color: #dff0d8; /* Green */
+}
+
+.seat.reservado {
+  background-color: #f0ad4e; /* Yellow */
+}
+
+.seat.vendido {
+  background-color: #d9534f; /* Red */
+  cursor: not-allowed;
+}
+

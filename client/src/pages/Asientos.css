@@ -1,0 +1,102 @@
+/* Contenedor principal */
+.asientos-container {
+    padding: 50px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Título */
+.asientos-list h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Botón "Crear Nuevo Asiento" */
+.btn-create-asiento {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #A86666;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.crear-asiento-btn:hover {
+    background-color: #218838;
+}
+
+/* Tabla */
+.asientos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Encabezados de la tabla */
+.asientos-table th {
+    padding: 15px;
+    text-align: left;
+    background-color: #A86666;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Celdas de la tabla */
+.asientos-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Mensaje "No hay asientos disponibles" */
+.asientos-table td[colspan="5"] {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    padding: 20px;
+}
+
+/* Botones de acciones */
+.asientos-table button {
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.asientos-table button:first-child {
+    background-color: #61c258;
+    color: white;
+}
+
+.asientos-table button:first-child:hover {
+    background-color: #0f8235;
+}
+
+.asientos-table button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+.asientos-table button:last-child:hover {
+    background-color: #c82333;
+}

@@ -1,0 +1,82 @@
+/* Contenedor principal */
+.attendance-history {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Título */
+.attendance-history h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Mensaje de carga o sin datos */
+.attendance-history p {
+    text-align: center;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Tabla de asistencias */
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.attendance-table th {
+    padding: 10px;
+    background-color: #A86666;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+}
+
+.attendance-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    text-align: left;
+}
+
+/* Resaltar fila al pasar el cursor */
+.attendance-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Alternar colores de las filas */
+.attendance-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    .attendance-table {
+        display: block;
+        overflow-x: auto;
+    }
+    .attendance-table th, .attendance-table td {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .attendance-history h2 {
+        font-size: 1.5em;
+    }
+    .attendance-table th, .attendance-table td {
+        font-size: 10px;
+        padding: 5px;
+    }
+}

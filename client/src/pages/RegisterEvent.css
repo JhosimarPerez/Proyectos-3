@@ -1,0 +1,84 @@
+/* Contenedor principal del formulario */
+.register-event-form {
+    background-color: #f7f7f7;
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  /* Título del formulario */
+  .register-event-form h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Etiquetas */
+  .register-event-form label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  /* Campos de entrada y selección */
+  .register-event-form input[type="text"],
+  .register-event-form input[type="number"],
+  .register-event-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Botón */
+  .register-event-form button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #A86666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-event-form button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 480px) {
+    .register-event-form {
+      padding: 15px;
+    }
+  
+    .register-event-form h2 {
+      font-size: 20px;
+    }
+  
+    .register-event-form input[type="text"],
+    .register-event-form input[type="number"],
+    .register-event-form select {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .register-event-form button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

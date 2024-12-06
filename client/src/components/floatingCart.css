@@ -1,0 +1,111 @@
+/* Estilos para la ventana flotante */
+.floating-cart {
+  position: fixed;
+  bottom: 20px;  /* Ajuste para que esté en la parte inferior */
+  right: 20px;   /* Ajuste para que esté en el lateral derecho */
+  width: 350px;
+  padding: 20px;
+  background-color: white;  /* Fondo blanco para hacerlo más limpio y elegante */
+  border-radius: 30px;  /* Bordes suavizados para darle un toque orgánico */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Sombra suave para darle un efecto flotante */
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+  transform: translateY(100px);  /* Inicialmente fuera de la vista */
+  overflow: hidden;  /* Para que el contenido no se desborde */
+  border: 1px solid rgba(0, 0, 0, 0.1);  /* Borde sutil para una estructura elegante */
+}
+
+.floating-cart.open {
+  opacity: 1;
+  transform: translateY(0);  /* Animación suave de aparición */
+}
+
+.floating-cart-header {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;  /* Texto oscuro pero suave */
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  text-align: center;  /* Centrado para un diseño más equilibrado */
+}
+
+.floating-cart-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;  /* Línea delgada y suave */
+  color: #333;  /* Texto oscuro */
+  font-size: 1rem;
+}
+
+.floating-cart-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.floating-cart-button {
+  padding: 9px 75px;
+  background-color: #FFB74D;  /* Tono cálido y suave de naranja */
+  color: white;
+  border: none;
+  border-radius: 35px;  /* Bordes redondeados para un look más fluido */
+  cursor: pointer;
+  font-size: 1.0rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 95%;
+}
+
+.floating-cart-button:hover {
+  background-color: #FFA726;  /* Color más intenso al pasar el ratón */
+  transform: scale(1.05);  /* Efecto de escala para interacción más atractiva */
+}
+
+.floating-cart-button.cancel {
+  background-color: #FF7043;  /* Color cálido de rojo-naranja */
+}
+
+.floating-cart-button.cancel:hover {
+  background-color: #F4511E;  /* Rojo más profundo al pasar el ratón */
+}
+
+.floating-cart-button:disabled {
+  background-color: #BDBDBD;  /* Gris para el botón deshabilitado */
+  cursor: not-allowed;
+  transform: none;
+}
+
+.floating-cart-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.floating-cart-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.floating-cart {
+  background: linear-gradient(45deg, #3498db, #9b59b6);
+  animation: gradient-animation 5s ease-in-out infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+      background: linear-gradient(45deg, #3498db, #9b59b6);
+  }
+  50% {
+      background: linear-gradient(45deg, #1abc9c, #f39c12);
+  }
+  100% {
+      background: linear-gradient(45deg, #3498db, #9b59b6);
+  }
+}

@@ -1,0 +1,149 @@
+.login-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #A86666, #f5f5f5);
+    
+    padding: 20px;
+}
+
+.login-container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.logo-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* Fondo opcional */
+    padding: 20px;
+}
+
+.logo-section img {
+    max-width: 150%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.form-section {
+    flex: 1;
+    padding: 30px;
+    color: black;
+}
+
+.form-section h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #A86666;
+}
+
+.social-login {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social-login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Espaciado con el resto del formulario */
+}
+
+.google {
+    background: #db4437;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    width: 650px;
+}
+
+.facebook {
+    background: #3b5998;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    width: 450px;
+}
+
+.divider {
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    margin: 10px 0;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*font-size: 0.9em;*/
+}
+
+.login-button {
+    background: #A86666;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 450px;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+.register-option {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.forgot-password, .register-option a {
+    color: #A86666;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
